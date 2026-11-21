@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#0E120F"/>
+  <rect x="1" y="1" width="62" height="62" rx="15" stroke="#252C26" stroke-width="2"/>
+  <text x="31" y="42" font-family="'Space Grotesk', system-ui, -apple-system, sans-serif" font-size="26" font-weight="600" fill="#EDEDED" text-anchor="middle" letter-spacing="-0.02em">CS</text>
+  <circle cx="49" cy="21" r="3" fill="#B6FF4A"/>
+</svg>
