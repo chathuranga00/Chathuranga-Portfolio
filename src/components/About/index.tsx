@@ -106,10 +106,10 @@ export const About: React.FC = () => {
               <Button
                 variant="primary"
                 href={profileData.resumeUrl}
-                download="Chathuranga_Resume.pdf"
+                download="Chathuranga_Sandaruwan_CV.pdf"
                 iconLeft={<Download size={16} />}
               >
-                Download CV (Placeholder)
+                Download CV
               </Button>
 
               <Button

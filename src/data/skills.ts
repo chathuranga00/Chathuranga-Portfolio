@@ -19,16 +19,22 @@ export const skillsCategories: SkillCategory[] = [
     description: "Building responsive, component-driven client interfaces with clean state and semantic markup.",
     skills: [
       {
-        name: "HTML",
+        name: "React",
         category: "Frontend",
-        explanation: "Structuring accessible, semantic web documents adhering to modern standards.",
-        iconName: "Code2",
+        explanation: "Developing modular, reactive web interfaces with hooks, context, and reusable patterns.",
+        iconName: "Atom",
       },
       {
-        name: "CSS",
+        name: "Tailwind CSS",
         category: "Frontend",
-        explanation: "Styling modern layouts with flexbox, grid, custom properties, and fluid typography.",
+        explanation: "Rapid utility-first styling with responsive ergonomics and design system design tokens.",
         iconName: "Palette",
+      },
+      {
+        name: "Vite",
+        category: "Frontend",
+        explanation: "Fast modern build tooling with ES modules, instant HMR, and optimized production bundles.",
+        iconName: "Zap",
       },
       {
         name: "JavaScript",
@@ -37,10 +43,16 @@ export const skillsCategories: SkillCategory[] = [
         iconName: "FileCode",
       },
       {
-        name: "React",
+        name: "HTML / CSS",
         category: "Frontend",
-        explanation: "Developing modular, reactive web interfaces with hooks, context, and reusable patterns.",
-        iconName: "Atom",
+        explanation: "Structuring accessible, semantic web documents adhering to modern standards and fluid layouts.",
+        iconName: "Code2",
+      },
+      {
+        name: "React Router",
+        category: "Frontend",
+        explanation: "Client-side declarative routing, nested layouts, loaders, and route-level code splitting.",
+        iconName: "Network",
       },
     ],
   },
@@ -50,28 +62,40 @@ export const skillsCategories: SkillCategory[] = [
     description: "Architecting server-side services, application logic, and secure endpoints.",
     skills: [
       {
-        name: "Java",
-        category: "Backend",
-        explanation: "Building robust, object-oriented software architectures and backend services.",
-        iconName: "Coffee",
-      },
-      {
         name: "Spring Boot",
         category: "Backend",
         explanation: "Creating enterprise-grade REST APIs and microservice foundations with dependency injection.",
         iconName: "Leaf",
       },
       {
+        name: "Java",
+        category: "Backend",
+        explanation: "Building robust, object-oriented software architectures, data structures, and backend services.",
+        iconName: "Coffee",
+      },
+      {
+        name: "Node.js",
+        category: "Backend",
+        explanation: "Event-driven asynchronous server runtimes, RESTful API endpoints, and middleware services.",
+        iconName: "Server",
+      },
+      {
+        name: "Spring Security",
+        category: "Backend",
+        explanation: "Role-based access control (RBAC), JWT token validation, and secure session management.",
+        iconName: "Shield",
+      },
+      {
+        name: "JPA / Hibernate",
+        category: "Backend",
+        explanation: "Object-relational mapping, transactional data queries, entity relationships, and persistence.",
+        iconName: "Database",
+      },
+      {
         name: "PHP",
         category: "Backend",
         explanation: "Executing server-side scripts, template processing, and dynamic database transactions.",
         iconName: "Server",
-      },
-      {
-        name: "Python",
-        category: "Backend",
-        explanation: "Developing automation scripts, backend utilities, and data manipulation workflows.",
-        iconName: "Terminal",
       },
     ],
   },
@@ -81,9 +105,15 @@ export const skillsCategories: SkillCategory[] = [
     description: "Designing structured schemas, relational entities, and cloud persistence layers.",
     skills: [
       {
-        name: "SQL",
+        name: "PostgreSQL",
         category: "Database",
-        explanation: "Writing relational schema definitions, structured queries, joins, and data normalization.",
+        explanation: "Enterprise relational database with ACID compliance, advanced indexing, and constraint enforcement.",
+        iconName: "Database",
+      },
+      {
+        name: "MySQL",
+        category: "Database",
+        explanation: "Relational database schema modeling, normalized entity tables, and high-performance queries.",
         iconName: "Database",
       },
       {
@@ -91,6 +121,18 @@ export const skillsCategories: SkillCategory[] = [
         category: "Database",
         explanation: "Utilizing managed PostgreSQL backend-as-a-service with auth and realtime capabilities.",
         iconName: "Boxes",
+      },
+      {
+        name: "Firebase",
+        category: "Database",
+        explanation: "NoSQL document persistence, cloud authentication, and real-time synchronization.",
+        iconName: "Boxes",
+      },
+      {
+        name: "SQL",
+        category: "Database",
+        explanation: "Writing relational schema definitions, structured queries, joins, and data normalization.",
+        iconName: "Database",
       },
     ],
   },
@@ -120,21 +162,33 @@ export const skillsCategories: SkillCategory[] = [
     ],
   },
   {
-    title: "Development",
+    title: "Development & Tools",
     slug: "development",
-    description: "Maintaining engineering discipline with version control and standardized communication.",
+    description: "Maintaining engineering discipline with version control, build tools, and modern AI acceleration.",
     skills: [
       {
-        name: "Git",
+        name: "Git & GitHub",
         category: "Development",
-        explanation: "Managing distributed version control, branching workflows, and commit integrity.",
+        explanation: "Managing distributed version control, branch strategies, pull requests, and code reviews.",
         iconName: "GitBranch",
       },
       {
-        name: "GitHub",
+        name: "Maven",
         category: "Development",
-        explanation: "Collaborating via pull requests, code reviews, issue tracking, and repository hosting.",
-        iconName: "Github",
+        explanation: "Java dependency management, build automation, lifecycle phases, and packaging.",
+        iconName: "Cpu",
+      },
+      {
+        name: "Capacitor (Android)",
+        category: "Development",
+        explanation: "Cross-platform mobile runtimes bridging modern web applications to native Android devices.",
+        iconName: "Smartphone",
+      },
+      {
+        name: "Cursor AI",
+        category: "Development",
+        explanation: "AI-assisted rapid prototyping, code refactoring, context-aware indexing, and productivity.",
+        iconName: "Zap",
       },
       {
         name: "REST APIs",

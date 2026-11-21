@@ -83,16 +83,46 @@ function generateAssistantReply(query: string): string {
   }
 
   // 6. Education
-  if (q.includes('education') || q.includes('degree') || q.includes('university') || q.includes('nsbm') || q.includes('school') || q.includes('background')) {
-    return `Chathuranga is pursuing a ${profileData.education.degree} at ${profileData.education.institution}, based in ${profileData.education.location}. His academic progression focuses on software engineering, computational algorithms, and system design.`;
+  if (
+    q.includes('education') ||
+    q.includes('degree') ||
+    q.includes('university') ||
+    q.includes('nsbm') ||
+    q.includes('school') ||
+    q.includes('kursk') ||
+    q.includes('background')
+  ) {
+    return `Chathuranga is currently in his 3rd Year, 1st Semester pursuing a BSc (Hons) in Computer Science at NSBM Green University, Sri Lanka. Previously, he completed a Russian Language Course (Pass with Merit) and studied Computer Science & Computer Engineering at Kursk State University, Russia (2021–2024), and completed his GCE Advanced Level (Physical Science stream) and Ordinary Level at Mahanama College, Panadura.`;
   }
 
-  // 6. Contact & Socials
+  // 7. CV / Resume
+  if (q.includes('cv') || q.includes('resume') || q.includes('download cv') || q.includes('curriculum vitae')) {
+    return `You can download Chathuranga's verified CV directly via the "Download CV" button in the navigation bar or at /resume.pdf. It outlines his education at NSBM Green University, his hands-on experience building LabAttend (live at NSBM), Fitness Sharks, and EduPulse, international studies in Russia, and his technical stack across React, Spring Boot, Node.js, and PostgreSQL/MySQL.`;
+  }
+
+  // 8. Academic References
+  if (
+    q.includes('reference') ||
+    q.includes('referee') ||
+    q.includes('supervisor') ||
+    q.includes('recommendation') ||
+    q.includes('pabudi') ||
+    q.includes('nimesha')
+  ) {
+    return `Chathuranga's verified academic references from NSBM Green University are:\n\n• Dr. Pabudi Abeyrathne — Lecturer, Department of Computer and Data Science (pabudi.a@nsbm.ac.lk)\n• Ms. Nimesha Hewawasam — Lecturer, Department of Software Engineering and Computer Security (nimesha.h@nsbm.ac.lk).`;
+  }
+
+  // 9. Spoken Languages
+  if (q.includes('language') && (q.includes('speak') || q.includes('sinhala') || q.includes('russian') || q.includes('english'))) {
+    return `Chathuranga is proficient in three languages: Sinhala (Native), English (Professional), and Russian (Pass with Merit from Kursk State University, Russia).`;
+  }
+
+  // 10. Contact & Socials
   if (q.includes('contact') || q.includes('email') || q.includes('hire') || q.includes('reach') || q.includes('touch') || q.includes('phone')) {
-    return `You can reach out to Chathuranga directly through the contact form, by email at ${profileData.socials.email.url.replace('mailto:', '')} (academic: ${profileData.academicEmail}), or by phone at ${profileData.phone}. You can also connect on LinkedIn at ${profileData.socials.linkedin.url} and view his code on GitHub at ${profileData.socials.github.url}.`;
+    return `You can reach out to Chathuranga directly through the contact form, by email at ${profileData.socials.email.url.replace('mailto:', '')} (academic: ${profileData.academicEmail}), or by phone at ${profileData.phone}. He is based in ${profileData.location} and open for internship and junior software developer roles. Connect on LinkedIn at ${profileData.socials.linkedin.url} or browse his code on GitHub at ${profileData.socials.github.url}!`;
   }
 
-  // 7. Research Interests & Authored Paper
+  // 11. Research Interests & Authored Paper
   if (q.includes('research') || q.includes('security') || q.includes('crypto') || q.includes('privacy') || q.includes('paper') || q.includes('iot')) {
     const otherTopics = researchInterests
       .filter((r) => r.id !== 'lightweight-cryptography-iot')
@@ -101,12 +131,12 @@ function generateAssistantReply(query: string): string {
     return `Chathuranga has authored an academic research paper titled "Lightweight Cryptography for Resource-constrained IoT Devices", conducting a systematic review across 34 peer-reviewed studies on NIST SP 800-232 (Ascon), microcontroller energy evaluation, and 8 critical deployment gaps under Dr. Pabudi Abeyrathne at NSBM Green University. You can view or download the full PDF directly in the Research section! Other active study interests include: ${otherTopics}.`;
   }
 
-  // 8. Location / Country
-  if (q.includes('location') || q.includes('where') || q.includes('country') || q.includes('sri lanka')) {
-    return `Chathuranga is based in Sri Lanka and is available for both local and global opportunities.`;
+  // 12. Location / Country
+  if (q.includes('location') || q.includes('where') || q.includes('country') || q.includes('panadura') || q.includes('sri lanka')) {
+    return `Chathuranga is based in Panadura, Sri Lanka, and is open for internships, junior software development roles, and global remote opportunities.`;
   }
 
-  // 9. Honest Fallback
+  // 13. Honest Fallback
   return `I don't have verified details on that specific topic in my portfolio knowledge base. For specific inquiries or opportunities, please contact Chathuranga directly via the contact form below or email him at ${profileData.socials.email.url.replace('mailto:', '')}!`;
 }
 

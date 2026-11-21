@@ -201,12 +201,12 @@ export const Navbar: React.FC = () => {
                 {isDark ? <Sun size={17} /> : <Moon size={17} />}
               </button>
 
-              {/* Download CV (Placeholder file) */}
+              {/* Download CV */}
               <Button
                 variant="outline"
                 size="sm"
                 href={profileData.resumeUrl}
-                download="Chathuranga_Resume.pdf"
+                download="Chathuranga_Sandaruwan_CV.pdf"
                 iconLeft={<Download size={14} />}
                 className="hidden xl:inline-flex"
               >
@@ -326,11 +326,11 @@ export const Navbar: React.FC = () => {
                 <Button
                   variant="outline"
                   href={profileData.resumeUrl}
-                  download="Chathuranga_Resume.pdf"
+                  download="Chathuranga_Sandaruwan_CV.pdf"
                   iconLeft={<Download size={15} />}
                   className="w-full justify-center"
                 >
-                  Download CV (Placeholder)
+                  Download CV
                 </Button>
                 <Button
                   variant="primary"
